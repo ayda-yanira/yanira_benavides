@@ -3,6 +3,22 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+
+class LibroSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+
+        <?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 
@@ -48,5 +64,9 @@ class libroSeeder extends Seeder
             ]
         ];
         DB::table('libro')->insert($datos);
+    }
+}
+
+
     }
 }

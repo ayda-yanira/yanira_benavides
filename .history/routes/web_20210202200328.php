@@ -1,9 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Principal;
-use App\Http\Controllers\Libros;
-use App\Http\Controllers\Editorial;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,9 +13,6 @@ use App\Http\Controllers\Editorial;
 |
 */
 
-//Ruta Principal
-Route::get('/', [Principal::class, 'index']);
-
-Route::get('/listar/libros', [libros::class, 'index'])->name('listado_libros');
-
-Route::get('/listar/editorial', [Editorial::class, 'index'])->name('listado_editorial');
+Route::get('/', function () {
+    return view('welcome');
+});

@@ -20,4 +20,4 @@ Route::get('/', [Principal::class, 'index']);
 
 Route::get('/listar/libros', [libros::class, 'index'])->name('listado_libros');
 
-Route::get('/listar/editorial', [Editorial::class, 'index'])->name('listado_editorial');
+Route::get('/listar/editorial', [editorial::class, 'index'])->name('listado_editorial');
